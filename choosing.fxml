@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="661.0" prefWidth="1234.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Choosing">
+   <left>
+      <AnchorPane prefHeight="662.0" prefWidth="42.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="3.0" layoutY="235.0" prefHeight="34.0" prefWidth="33.0" text="." textFill="#ffffff00">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/D:/TheRealMainDSProject/space/home-xl.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="3.0" layoutY="415.0" prefHeight="34.0" prefWidth="47.0" text="." textFill="#ffffff00">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/D:/TheRealMainDSProject/space/settings-17-xl.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="3.0" layoutY="313.0" prefHeight="34.0" prefWidth="47.0" text="." textFill="#ffffff00">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/D:/TheRealMainDSProject/space/user-4-xl.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Circle fill="WHITE" layoutX="30.0" layoutY="632.0" radius="18.0" stroke="#c1c1c1" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="687.0" prefWidth="1184.0" style="-fx-background-color: #f3f3f3;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="47.0" prefHeight="320.0" prefWidth="1074.0" style="-fx-background-color: #ffffff; -fx-border-color: #ffffff; -fx-background-radius: 30px 0px; -fx-border-radius: 30px 30px;" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox>
+                     <children>
+                        <Label text="Reservation Dashboard">
+                           <font>
+                              <Font name="Centaur" size="24.0" />
+                           </font>
+                           <padding>
+                              <Insets left="15.0" top="20.0" />
+                           </padding>
+                           <textFill>
+                              <LinearGradient endX="0.7748091020656906" endY="0.9045801526717557" startX="0.7748092108100425" startY="0.44274814256274975">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.12941177189350128" green="0.6470588445663452" blue="0.7176470756530762" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <effect>
+                              <Reflection fraction="1.0" topOpacity="0.29" />
+                           </effect>
+                        </Label>
+                        <Separator orientation="VERTICAL">
+                           <padding>
+                              <Insets left="10.0" right="10.0" top="15.0" />
+                           </padding>
+                        </Separator>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="256.0" layoutY="10.0" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="854.0" text="6:19  2 April 2021" textFill="#22a4b5" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Century" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="15.0" right="5.0" top="20.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="30.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="242.0" prefWidth="1083.0" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="30.0" />
+                     </VBox.margin>
+                     <children>
+                        <VBox HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Available Dates" textFill="#22a4b5">
+                                 <font>
+                                    <Font name="Calibri Bold" size="17.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="20.0" top="15.0" />
+                                 </padding>
+                              </Label>
+                              <HBox prefHeight="186.0" prefWidth="672.0">
+                                 <VBox.margin>
+                                    <Insets left="50.0" top="20.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <JFXButton fx:id="addButton" buttonType="RAISED" onAction="#setAddButton" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: #22a4b5; -fx-border-style: dashed; -fx-background-radius: 5px; -fx-background-color: transparent; -fx-border-radius: 5px;" text="+">
+                                       <font>
+                                          <Font name="Corbel Bold" size="31.0" />
+                                       </font>
+                                       <textFill>
+                                          <RadialGradient centerX="0.5" centerY="0.5" focusDistance="-0.11214951488459224" radius="0.6121495594488127">
+                                             <stops>
+                                                <Stop>
+                                                   <color>
+                                                      <Color red="0.13333334028720856" green="0.6431372761726379" blue="0.7098039388656616" />
+                                                   </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                   <color>
+                                                      <Color red="0.13333334028720856" green="0.6431372761726379" blue="0.7098039388656616" />
+                                                   </color>
+                                                </Stop>
+                                             </stops>
+                                          </RadialGradient>
+                                       </textFill>
+                                    </JFXButton>
+                                    <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="185.0" prefWidth="299.0" style="-fx-background-radius: 10px; -fx-background-color: #22a4b5;">
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <Label fx:id="firstDate" disable="true" layoutX="28.0" layoutY="50.0" prefHeight="38.0" prefWidth="76.0" style="-fx-border-radius: 0px 10px; -fx-border-color: #ffffff;" text="April 1rt" textFill="#fff7f7">
+                                             <font>
+                                                <Font name="Dubai Light" size="20.0" />
+                                             </font>
+                                             <effect>
+                                                <Reflection />
+                                             </effect>
+                                          </Label>
+                                          <Label fx:id="secondDate" disable="true" layoutX="109.0" layoutY="87.0" prefHeight="38.0" prefWidth="81.0" style="-fx-border-radius: 0px 15px; -fx-border-color: #ffffff;" text="April 7th" textFill="#fff7f7">
+                                             <font>
+                                                <Font name="Dubai Light" size="20.0" />
+                                             </font>
+                                             <opaqueInsets>
+                                                <Insets />
+                                             </opaqueInsets>
+                                             <effect>
+                                                <Reflection fraction="1.0" topOpacity="1.0" />
+                                             </effect>
+                                          </Label>
+                                          <Label fx:id="thirdDate" disable="true" layoutX="28.0" layoutY="123.0" prefHeight="28.0" prefWidth="89.0" text="April 13rt" textFill="#fff7f7">
+                                             <font>
+                                                <Font name="Dubai Light" size="20.0" />
+                                             </font>
+                                             <effect>
+                                                <Bloom>
+                                                   <input>
+                                                      <Glow />
+                                                   </input>
+                                                </Bloom>
+                                             </effect>
+                                          </Label>
+                                          <Label fx:id="fourthDate" layoutX="195.0" layoutY="52.0" prefHeight="28.0" prefWidth="89.0" text="April 19th" textFill="#fff7f7">
+                                             <font>
+                                                <Font name="Dubai Light" size="20.0" />
+                                             </font>
+                                             <effect>
+                                                <Glow>
+                                                   <input>
+                                                      <Bloom />
+                                                   </input>
+                                                </Glow>
+                                             </effect>
+                                          </Label>
+                                          <Label fx:id="fifthDate" layoutX="195.0" layoutY="123.0" prefHeight="28.0" prefWidth="89.0" style="-fx-border-radius: 0px 15px; -fx-border-color: #ffffff;" text="April 25th" textFill="#fff7f7">
+                                             <font>
+                                                <Font name="Dubai Light" size="20.0" />
+                                             </font>
+                                             <effect>
+                                                <Reflection fraction="1.0" topOpacity="0.56" />
+                                             </effect>
+                                          </Label>
+                                          <Label layoutX="28.0" layoutY="14.0" prefHeight="28.0" prefWidth="141.0" text="Choose One :">
+                                             <font>
+                                                <Font name="Candara" size="19.0" />
+                                             </font>
+                                             <textFill>
+                                                <RadialGradient centerX="0.5" centerY="0.5" cycleMethod="REFLECT" focusDistance="-0.09345794392523366" radius="0.4719626435609621">
+                                                   <stops>
+                                                      <Stop>
+                                                         <color>
+                                                            <Color red="0.7568627595901489" green="0.9647058844566345" blue="0.929411768913269" />
+                                                         </color>
+                                                      </Stop>
+                                                      <Stop offset="1.0">
+                                                         <color>
+                                                            <Color red="1.0" green="1.0" blue="1.0" />
+                                                         </color>
+                                                      </Stop>
+                                                   </stops>
+                                                </RadialGradient>
+                                             </textFill>
+                                             <effect>
+                                                <Glow />
+                                             </effect>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="91.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="169.0" prefWidth="370.0" style="-fx-background-radius: 10px; -fx-background-color: #031163;">
+                                       <children>
+                                          <Label layoutX="37.0" layoutY="61.0" prefHeight="38.0" prefWidth="296.0" style="-fx-border-radius: 0px 15px; -fx-border-color: #ffffff;" text="To book a flight , press the plus sign" textFill="#fff7f7">
+                                             <font>
+                                                <Font name="Dubai Light" size="20.0" />
+                                             </font>
+                                             <opaqueInsets>
+                                                <Insets />
+                                             </opaqueInsets>
+                                             <effect>
+                                                <Reflection topOpacity="0.29">
+                                                   <input>
+                                                      <Bloom />
+                                                   </input>
+                                                </Reflection>
+                                             </effect>
+                                          </Label>
+                                          <Label layoutX="28.0" layoutY="14.0" prefHeight="28.0" prefWidth="141.0" text="INSTRUCTIONS ">
+                                             <font>
+                                                <Font name="Candara" size="19.0" />
+                                             </font>
+                                             <textFill>
+                                                <RadialGradient centerX="0.5" centerY="0.5" cycleMethod="REFLECT" focusDistance="-0.09345794392523366" radius="0.4719626435609621">
+                                                   <stops>
+                                                      <Stop>
+                                                         <color>
+                                                            <Color red="0.7568627595901489" green="0.9647058844566345" blue="0.929411768913269" />
+                                                         </color>
+                                                      </Stop>
+                                                      <Stop offset="1.0">
+                                                         <color>
+                                                            <Color red="1.0" green="1.0" blue="1.0" />
+                                                         </color>
+                                                      </Stop>
+                                                   </stops>
+                                                </RadialGradient>
+                                             </textFill>
+                                             <effect>
+                                                <Glow />
+                                             </effect>
+                                          </Label>
+                                          <Label layoutX="70.0" layoutY="121.0" prefHeight="50.0" prefWidth="244.0" text="Make sure to choose the exact Dates&#10; that are not misleading " textAlignment="CENTER" textFill="#fff7f7">
+                                             <font>
+                                                <Font name="Dubai Light" size="14.0" />
+                                             </font>
+                                             <effect>
+                                                <Glow>
+                                                   <input>
+                                                      <Bloom />
+                                                   </input>
+                                                </Glow>
+                                             </effect>
+                                          </Label>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="30.0" />
+                                       </HBox.margin>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Separator maxHeight="1.7976931348623157E308" minHeight="-Infinity" orientation="VERTICAL" prefHeight="142.0" prefWidth="12.0">
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                        </Separator>
+                        <VBox prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label prefHeight="18.0" prefWidth="84.0" text="Flight Time" textFill="#22a4b5">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                                 <graphic>
+                                    <ImageView fitHeight="10.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="file:/D:/TheRealMainDSProject/space/arrow-204-xl.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Morning">
+                                 <font>
+                                    <Font name="Dubai Light" size="17.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="15.0" right="15.0" top="15.0" />
+                                 </VBox.margin>
+                                 <textFill>
+                                    <LinearGradient endX="0.8740457578469779" endY="0.8473282408623295" startX="0.7824427617415217">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="0.13333334028720856" green="0.6431372761726379" blue="0.7098039388656616" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="1.0" green="1.0" blue="1.0" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <JFXButton buttonType="RAISED" prefHeight="52.0" prefWidth="82.0" style="-fx-background-color: #ffffff; -fx-background-radius: 100%;" text="10 : 30 AM" textFill="#7dcaa2">
+                                 <VBox.margin>
+                                    <Insets left="60.0" />
+                                 </VBox.margin>
+                              </JFXButton>
+                              <Label layoutX="10.0" layoutY="143.0" text="Night">
+                                 <font>
+                                    <Font name="Dubai Light" size="17.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="15.0" right="15.0" top="15.0" />
+                                 </VBox.margin>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="0.13333334028720856" green="0.6431372761726379" blue="0.7098039388656616" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="1.0" green="1.0" blue="1.0" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="39.0" prefHeight="52.0" prefWidth="82.0" style="-fx-background-color: #ffffff; -fx-background-radius: 100%;" text="7 : 00 PM" textFill="#e5707a">
+                                 <VBox.margin>
+                                    <Insets left="60.0" />
+                                 </VBox.margin>
+                              </JFXButton>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <AnchorPane layoutX="40.0" layoutY="370.0" prefHeight="285.0" prefWidth="1104.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="370.0">
+               <children>
+                  <Label layoutX="32.0" layoutY="14.0" prefHeight="31.0" prefWidth="108.0" text="About Flights" textFill="#22a4b5" AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="14.0">
+                     <font>
+                        <Font name="Dubai Light" size="17.0" />
+                     </font>
+                  </Label>
+                  <VBox layoutX="32.0" layoutY="55.0" prefHeight="214.0" prefWidth="234.0" style="-fx-border-radius: 5px; -fx-border-color: #c1c1c1;">
+                     <children>
+                        <Label prefHeight="66.0" prefWidth="167.0" text="Shuttles that took off&#10; since the start of the project " textAlignment="CENTER">
+                           <font>
+                              <Font name="Dubai Light" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="30.0" top="5.0" />
+                           </VBox.margin>
+                           <textFill>
+                              <RadialGradient centerX="0.5" centerY="0.5" cycleMethod="REFLECT" radius="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.13333334028720856" green="0.6431372761726379" blue="0.7098039388656616" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </RadialGradient>
+                           </textFill>
+                        </Label>
+                        <Label prefHeight="35.0" prefWidth="189.0" text="350 successful flights" textFill="#7dcaa2">
+                           <font>
+                              <Font name="Dubai Light" size="20.0" />
+                           </font>
+                           <effect>
+                              <Bloom threshold="1.0">
+                                 <input>
+                                    <Glow level="0.19" />
+                                 </input>
+                              </Bloom>
+                           </effect>
+                           <VBox.margin>
+                              <Insets left="25.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Separator prefWidth="200.0">
+                           <VBox.margin>
+                              <Insets left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Separator>
+                        <Label layoutX="41.0" layoutY="16.0" prefHeight="26.0" prefWidth="112.0" text="Up coming flights " textAlignment="CENTER">
+                           <font>
+                              <Font name="Dubai Light" size="14.0" />
+                           </font>
+                           <textFill>
+                              <RadialGradient centerX="0.5" centerY="0.5" cycleMethod="REFLECT" radius="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.13333334028720856" green="0.6431372761726379" blue="0.7098039388656616" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </RadialGradient>
+                           </textFill>
+                           <VBox.margin>
+                              <Insets left="60.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="36.0" layoutY="82.0" prefHeight="35.0" prefWidth="108.0" text="+866 flights" textFill="#e5707a">
+                           <font>
+                              <Font name="Dubai Light" size="20.0" />
+                           </font>
+                           <effect>
+                              <Bloom threshold="1.0">
+                                 <input>
+                                    <Glow level="0.19" />
+                                 </input>
+                              </Bloom>
+                           </effect>
+                           <VBox.margin>
+                              <Insets left="60.0" top="8.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <AnchorPane layoutX="327.0" layoutY="55.0" prefHeight="214.0" prefWidth="381.0">
+                     <children>
+                        <MediaView fx:id="mv" fitHeight="180.0" fitWidth="370.0" layoutX="0.800000011920929" layoutY="0.800000011920929" />
+                        <JFXButton fx:id="stopButton" buttonType="RAISED" layoutX="114.0" layoutY="181.0" onAction="#onClick_stopButton" prefHeight="31.0" prefWidth="64.0" text="." textFill="#ffffff00">
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/D:/TheRealMainDSProject/space/stop-xl.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="playButton" buttonType="RAISED" layoutX="168.0" layoutY="181.0" onAction="#onClick_playButton" prefHeight="32.0" prefWidth="34.0" text="." textFill="#ffffff00">
+                           <graphic>
+                              <ImageView fitHeight="76.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/D:/TheRealMainDSProject/space/arrow-37-xl.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="327.0" layoutY="14.0" prefHeight="31.0" prefWidth="142.0" text="First Time In Space" textFill="#22a4b5">
+                     <font>
+                        <Font name="Dubai Light" size="17.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="closeButton" buttonType="RAISED" layoutX="804.0" layoutY="176.0" onAction="#toCloseButton" prefHeight="66.0" prefWidth="266.0" style="-fx-border-radius: 5px; -fx-border-style: dashed; -fx-border-color: #22a4b5;" text="Press here to Leave the App" underline="true">
+                     <textFill>
+                        <LinearGradient cycleMethod="REPEAT" endX="0.6297709996463688" endY="0.9503816789343157" startX="0.3740457951567555" startY="0.25572525635930426">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.13333334028720856" green="0.6431372761726379" blue="0.7098039388656616" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.34117648005485535" green="0.9098039269447327" blue="0.9490196108818054" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <effect>
+                        <Reflection bottomOpacity="0.01" fraction="0.66" topOpacity="0.52">
+                           <input>
+                              <Glow level="0.45" />
+                           </input>
+                        </Reflection>
+                     </effect>
+                  </JFXButton>
+                  <JFXButton fx:id="youTube_Button" buttonType="RAISED" layoutX="808.0" layoutY="61.0" prefHeight="66.0" prefWidth="259.0" style="-fx-border-radius: 5px; -fx-border-style: dashed; -fx-border-color: #22a4b5;" text="Click here to visite our youtube chanel " underline="true">
+                     <textFill>
+                        <LinearGradient cycleMethod="REPEAT" endX="0.6297709996463688" endY="0.9503816789343157" startX="0.3740457951567555" startY="0.25572525635930426">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.13333334028720856" green="0.6431372761726379" blue="0.7098039388656616" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.34117648005485535" green="0.9098039269447327" blue="0.9490196108818054" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <effect>
+                        <Reflection bottomOpacity="0.01" fraction="0.66" topOpacity="0.52">
+                           <input>
+                              <Glow level="0.45" />
+                           </input>
+                        </Reflection>
+                     </effect>
+                  </JFXButton>
+                  <Separator layoutX="739.0" layoutY="55.0" orientation="VERTICAL" prefHeight="200.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

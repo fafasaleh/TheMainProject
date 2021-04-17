@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="184.0" style="-fx-background-color: #072f5f;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Reservation">
+   <children>
+      <ImageView fitHeight="662.0" fitWidth="354.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/TheRealMainDSProject/space/ba4ea46d-6711-4d6e-8971-660f11bbb8ac.jpg" />
+         </image>
+      </ImageView>
+      <JFXDatePicker fx:id="date" layoutX="57.0" layoutY="212.0" prefHeight="30.0" prefWidth="238.0" showWeekNumbers="true" style="-fx-background-color: #ffffff;">
+         <defaultColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.054901961237192154" green="0.2862745225429535" blue="0.5490196347236633" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </defaultColor>
+         <effect>
+            <Glow />
+         </effect>
+      </JFXDatePicker>
+      <Label layoutX="80.0" layoutY="104.0" text="Pick A Date ">
+         <textFill>
+            <LinearGradient endX="0.22519083241469984" endY="1.0" startX="0.19847328426273725">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.054901961237192154" green="0.29019609093666077" blue="0.5411764979362488" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Bookshelf Symbol 7" size="36.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </Label>
+      <JFXButton fx:id="submitButton" buttonType="RAISED" layoutX="130.0" layoutY="309.0" onAction="#datePicker" prefHeight="42.0" prefWidth="91.0" style="-fx-border-color: #ffffff;" text="Submit">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <Bloom threshold="0.82" />
+         </effect>
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.8435115086213322" endY="0.6450381679389312" startX="0.8854961104065407">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.05882352963089943" green="0.2980392277240753" blue="0.5411764979362488" opacity="0.23000000417232513" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </JFXButton>
+      <JFXButton fx:id="editButton" buttonType="RAISED" layoutX="74.0" layoutY="543.0" prefHeight="42.0" prefWidth="91.0" style="-fx-border-color: #ffffff;" text="Edit">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <effect>
+            <Bloom threshold="0.82" />
+         </effect>
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.8435115086213322" endY="0.6450381679389312" startX="0.8854961104065407">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.05939999967813492" green="0.299699991941452" blue="0.5400000214576721" opacity="0.2283736765384674" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </JFXButton>
+      <JFXButton fx:id="deleteButton" buttonType="RAISED" layoutX="193.0" layoutY="543.0" prefHeight="42.0" prefWidth="91.0" style="-fx-border-color: #ffffff;" text="Delet">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <effect>
+            <Bloom threshold="0.82" />
+         </effect>
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.8435115086213322" endY="0.6450381679389312" startX="0.8854961104065407">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.05939999967813492" green="0.299699991941452" blue="0.5400000214576721" opacity="0.2283736765384674" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </JFXButton>
+      <JFXTreeTableView fx:id="showTable" layoutX="53.0" layoutY="401.0" prefHeight="116.0" prefWidth="248.0" />
+   </children>
+</AnchorPane>
